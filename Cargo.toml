@@ -1,0 +1,32 @@
+[package]
+name = "roastlings"
+version = "0.1.0"
+edition = "2021"
+authors = ["Noroutine GmbH <info@noroutine.com>"]
+description = "Advanced Rust exercises for roasted rustlings"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/noroutine/roastlings"
+homepage = "https://github.com/noroutine/roastlings"
+documentation = "https://docs.rs/roastlings"
+readme = "README.md"
+keywords = ["rust", "tutorial", "learning", "exercises", "advanced"]
+categories = ["development-tools"]
+
+[dependencies]
+# Core dependencies for exercise runner
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+colored = "2.0"
+notify = "6.0"
+indicatif = "0.17"
+
+[dev-dependencies]
+tempfile = "3.0"
+
+[[bin]]
+name = "roastlings"
+path = "src/main.rs"
+
+[package.metadata.docs.rs]
+all-features = true
