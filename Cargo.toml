@@ -1,3 +1,9 @@
+bin = [
+  { name = "roastlings", path = "src/main.rs" },
+  { name = "intro1", path = "exercises/00_intro/intro1.rs" },
+  { name = "intro1_sol", path = "solutions/00_intro/intro1.rs" },
+]
+
 [package]
 name = "roastlings"
 version = "0.1.0"
@@ -23,10 +29,6 @@ indicatif = "0.17"
 
 [dev-dependencies]
 tempfile = "3.0"
-
-[[bin]]
-name = "roastlings"
-path = "src/main.rs"
 
 [package.metadata.docs.rs]
 all-features = true
